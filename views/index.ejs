@@ -1,0 +1,25 @@
+<h1>Best Cars of 2024–2025</h1>
+
+
+<div>
+  <a href="/category/4cyl">4 Cylinder Turbo</a> 
+  <br>
+  <a href="/category/6cyl">6 Cylinder</a> 
+  <br>
+  <a href="/category/8cyl">8 Cylinder</a>
+  <br>
+ 
+  
+</div>
+
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <a href="/posts/<%= post.id %>"><%= post.title %></a> -
+      <% if (post.engine === '4cyl') { %>4 Cylinder Turbo<% }
+         else if (post.engine === '6cyl') { %>6 Cylinder<% }
+         else if (post.engine === '8cyl') { %>8 Cylinder<% } %>
+    </li>
+  <% }) %>
+</ul> 
+

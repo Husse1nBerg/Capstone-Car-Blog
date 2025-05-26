@@ -1,0 +1,26 @@
+{
+  "name": "car-blog",
+  "version": "1.0.0",
+  "description": "A car-themed blog built with Node.js, Express, and EJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "ejs",
+    "blog",
+    "cars"
+  ],
+  "author": "Hussein",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "marked": "^15.0.12",
+    "node": "^22.16.0"
+  }
+}

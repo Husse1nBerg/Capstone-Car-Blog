@@ -1,0 +1,20 @@
+
+<main class="container">
+  <h1><%= post.title %></h1>
+  <p><strong>Engine:</strong> <%= post.engine %></p>
+
+  <% if (post.image) { %> 
+  <img src="<%= post.image %>" alt="Car Image" style="max-width: 100%; border-radius: 12px; margin-bottom: 1em;" />
+<% } %>
+
+
+  <div class="blog-body">
+    <%- content %> 
+  </div>
+
+  <div class="post-controls">
+  <a href="/edit/<%= post.id %>">✏️ Edit</a> |
+  <form action="/delete/<%= post.id %>" method="POST" style="display:inline;">
+    <button type="submit" onclick="return confirm('Are you sure?')">🗑️ Delete</button>
+  </form>
+</div>

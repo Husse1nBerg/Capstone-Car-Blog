@@ -1,0 +1,129 @@
+
+
+
+/* Header and footer styling */
+header, footer {
+  background: rgb(152, 137, 137); /* Teal background for contrast */
+  font: arial, sans-serif; /* Consistent font */
+  font-size : 20px; /* Font size */
+  color: white; /* White text color */
+  padding: 10px; /* Inner spacing */
+  text-align: center; /* Centered text */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Base page styling */
+body {
+  font-family: sans-serif; /* Use a clean, readable font */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Space around the body content */
+  background: #f4f4f4; /* Light gray background */
+}
+
+/* Navigation link styling */
+nav a {
+  color: white; /* White link color */
+  margin: 0 10px; /* Horizontal spacing between links */
+  text-decoration: none; /* Remove underline */
+  display: flex;       /* 👈 Puts links side by side */
+  justify-content: center;  /* 👈 Optional: center them */
+  gap: 20px; 
+}
+
+/* best cars of 2024-2025 */
+.container h1 {
+  font-size: 3rem;       /* 🔼 Increase this value to your liking */
+  text-align: left;    /* Optional: center the heading */
+  margin-bottom: 20px;   /* Optional: space below the title */
+}
+
+/* Form controls styling */
+input, textarea, select {
+  display: block; /* Each input on a new line */
+  width: 100%; /* Full width of parent */
+  margin: 10px 0; /* Vertical spacing */
+  padding: 10px; /* Inner spacing */
+}
+
+/* Submit button styling */
+button {
+  padding: 10px 15px; /* Inner spacing */
+  background-color: #007bff; /* Bootstrap blue */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* part that cntaisn the clickable options */
+.container {
+  text-align: left;
+  font-size: 30px;
+  width: 90%; /* Responsive width */
+  max-width: 1500px; /* Cap at 1000px for readability */
+  min-height: calc(100vh - 300px); /* Viewport height minus space for header & footer */
+  margin: auto; /* Center horizontally */
+  font-family: Arial, sans-serif; /* Consistent font */
+  padding: 20px; /* Space inside the box */
+  background: rgb(146, 156, 156); /* White background */
+  border-radius: 8px; /* Rounded corners */
+  line-height: 1.6; /* Better line spacing */
+
+  background-image: url("/v8.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px auto;  /* Or "contain" or "cover" */
+  background-blend-mode: lighten;
+  opacity: 0.98;
+ 
+}
+
+/* Make all images scale with their container */
+.container img, .blog-body img {
+  max-width: 100%; /* Scale to parent width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Slightly rounded edges */
+  margin: 1em 0; /* Top and bottom spacing */
+}
+
+/* Blog body list styling */
+.blog-body ul {
+  padding-left: 1.5em; /* Indent lists */
+  list-style: disc; /* Bullet points */
+}
+
+/* Headings inside blog body */
+.blog-body h2 {
+  margin-top: 1.5em; /* Space above heading */
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Slightly more padding on mobile */
+    padding: 15px; /* Reduced internal padding */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Scaled down for small screens */
+  }
+
+  nav {
+    display: flex; /* Flexible navigation layout */
+    flex-direction: column; /* Stack links vertically */
+    gap: 0.5rem; /* Spacing between nav items */
+  }
+}
+
+/*how pressable links look */
+a,
+a:visited,
+a:link {
+  color: rgb(130, 47, 47); /* or whatever color you prefer */
+  text-decoration: none;
+}
+
+/* Hover effect */
+a:hover {
+  text-decoration: underline;
+  color: #00bcd4; /* Optional hover color */
+}

@@ -1,0 +1,23 @@
+<h2><%= post ? 'Edit Post' : 'New Post' %></h2>
+
+
+
+<form action="<%= post ? ('/edit/' + post.id) : '/new' %>" method="POST">
+  <label>Title:</label>
+  <input name="title" placeholder="Car Title" value="<%= post?.title || '' %>" required />
+
+  <label>Engine Type:</label>
+  <select name="engine" required>
+    <option value="4cyl" <%= post?.engine === '4cyl' ? 'selected' : '' %>>4 Cylinder Turbo</option>
+    <option value="6cyl" <%= post?.engine === '6cyl' ? 'selected' : '' %>>6 Cylinder</option>
+    <option value="8cyl" <%= post?.engine === '8cyl' ? 'selected' : '' %>>8 Cylinder</option>
+  </select>
+
+  <label>Description:</label>
+  <textarea name="content" placeholder="Write about the car..." rows="6"><%= post?.content || '' %></textarea>
+
+  <label>Image URL (optional):</label> <!--add images--> 
+  <input name="image" placeholder="https://example.com/car.jpg" value="<%= post?.image || '' %>" />
+
+  <button type="submit">Save</button>
+</form>
